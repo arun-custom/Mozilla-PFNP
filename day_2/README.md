@@ -8,7 +8,7 @@
 
 ##### Object Notation
 
-```
+```javascript
 var myObject = {
 	firstName: "Arun",
 	lastName: "Sood",
@@ -18,7 +18,7 @@ var myObject = {
 
 ##### Accessing Objects
 
-```
+```javascript
 myObject.firstName
 
 myObject.lastName
@@ -28,7 +28,7 @@ myObject.role
 
 ##### Objects can have multiple data types
 
-```
+```javascript
 var myObject = {
 	firstName: "Arun",
 	lastName: "Sood",
@@ -57,31 +57,31 @@ var myObject = {
 
 ##### getElementById()
 
-```
+```javascript
 document.getElementById("my-div");
 ```
 
 ##### getElementsByClassName()
 
-```
+```javascript
 document.getElementsByClassName("my-div");
 ```
 
 ##### getElementsByTagName()
 
-```
+```javascript
 document.getElementsByTagName("my-div");
 ```
 
 ##### querySelector()
 
-```
+```javascript
 document.querySelector("#my-div");
 ```
 
 ##### querySelectorAll()
 
-```
+```javascript
 document.querySelectorAll("#my-div.my-class");
 ```
 
@@ -90,7 +90,7 @@ document.querySelectorAll("#my-div.my-class");
 - There are many events you may want to respond to with JS including clicks, mouseovers, focuses, etc.
 - Events can be listened for and responded to using `addEventListener`.
 
-```
+```javascript
 document
 .getElementById("my-div")
 .addEventListener("click", function() {
@@ -103,7 +103,7 @@ document
 
 ##### index.html
 
-```
+```html
 <div class="my-div"></div>
 <div class="my-div"></div>
 <div class="my-div"></div>
@@ -111,7 +111,7 @@ document
 
 ##### app.js
 
-```
+```javascript
 var myElements = document.getElementsByClassName("my-div");
 
 for (var i = 0; i < myElements.length; i++) {
@@ -125,7 +125,7 @@ for (var i = 0; i < myElements.length; i++) {
 
 - When you need to replace the HTML inside of an element you can use the `innerHTML` property.
 
-```
+```javascript
 document.getElementById("my-div").innerHTML = "<span>New HTML here</span>";
 ```
 
@@ -193,13 +193,13 @@ div.classList.contains("foo");
 
 HTML
 
-```
+```html
 <div id="my-div"></div>
 ```
 
 CSS
 
-```
+```css
 @media(min-width: 700px) {
 	#my-div {
 		width:400px;
@@ -213,7 +213,7 @@ CSS
 
 CSS
 
-```
+```css
 @media(max-width: 700px) {
 	#my-div {
 		width:400px;
@@ -225,7 +225,7 @@ CSS
 
 - You can also combine these values to select a range:
 
-```
+```css
 @media(min-width: 700px) and (max-width: 900px) {
 	#my-div {
 		width:400px;
@@ -295,7 +295,7 @@ transform: transform-function;
 - A more exhaustive list can be found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/transform).
 - Let's say that we wanted to rotate an element upon hover:
 
-```
+```css
 #my-div {
 	width: 200px;
 	height: 200px;
@@ -316,7 +316,7 @@ transform: transform-function;
 - The idea is that instead of transitioning an element from one state to another slowly, you are specifying style attributes that must be accomplished during stops along the animation.
 - Here is the syntax:
 
-```
+```css
 div {
 	width:100px;
 	height:200px;
@@ -377,3 +377,15 @@ div {
 - Animate.css is a library that packages a number of useful animations that can be accessed via classes.
 - You can read about it here: https://daneden.github.io/animate.css
 - Let's practice some of these animations with JavaScript event handling.
+
+## Animation Lab
+
+- In this lab we will be creating an animation using CSS and JavaScript combined.
+- The animation can be found below:
+
+<details>
+	<summary>See sample image</summary>
+	![Animation](img/switch_browsers_animation.gif)
+</details>
+
+- We will be using the Animate.css library to help develop this.
