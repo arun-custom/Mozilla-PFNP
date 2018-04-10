@@ -381,11 +381,10 @@ div {
 ## Animation Lab
 
 - In this lab we will be creating an animation using CSS and JavaScript combined.
+- We will be using the Animate.css library to help develop this.
 - The animation can be found below:
 
 <details>
 	<summary>See sample image</summary>
 	<img src="img/switch_browsers_animation.gif" />
 </details>
-
-- We will be using the Animate.css library to help develop this.
