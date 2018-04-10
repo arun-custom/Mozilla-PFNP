@@ -385,7 +385,7 @@ div {
 
 <details>
 	<summary>See sample image</summary>
-	![Animation](img/switch_browsers_animation.gif)
+	<img src="img/switch_browsers_animation.gif" />
 </details>
 
 - We will be using the Animate.css library to help develop this.
